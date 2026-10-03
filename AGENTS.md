@@ -1,19 +1,19 @@
 # Agent Architecture & Topology
 
-Synthetic Data Privacy Auditor Agent employs a modular multi-agent architecture with strict supervisory boundaries, deterministic resource budgeting, and zero prompt-leakage contracts.
+Synthetic Data Privacy Auditor employs a modular multi-agent architecture with strict supervisory boundaries, deterministic resource budgeting, and zero prompt-leakage contracts.
 
 ## Multi-Agent Roles
 
-- **epsilon-evaluator**: Performs primary technical analysis and forms candidate plans. Role: maker.
-- **inference-risk-auditor**: Audits diagnostic findings and verifies safety invariant constraints. Role: checker.
+- **analysis-planner**: Performs primary technical analysis and forms candidate plans. Role: maker.
+- **invariant-auditor**: Audits diagnostic findings and verifies safety invariant constraints. Role: checker.
 - **compliance-auditor**: Verifies regulatory policies and logs cryptographically signed traces. Role: auditor.
 - **task-executor**: Dispatches verified interventions to external environments. Role: executor.
 
 ## Segregation of Duties
 
 The system enforces strict segregation between plan generation and verification:
-- The maker role is held by epsilon-evaluator.
-- The checker role is held by inference-risk-auditor.
+- The maker role is held by analysis-planner.
+- The checker role is held by invariant-auditor.
 These roles are strictly partitioned and cannot be executed by the same agent.
 
 ## Capabilities
