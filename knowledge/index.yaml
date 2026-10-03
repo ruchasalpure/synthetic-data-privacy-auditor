@@ -1,0 +1,5 @@
+domain_knowledge:
+  category: "cybersecurity"
+  agent: "synthetic-data-privacy-auditor"
+  ontology: "OpenGAP Core Ontology v1.0"
+  indexed_entities: 1024

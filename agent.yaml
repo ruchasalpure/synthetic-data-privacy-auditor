@@ -1,0 +1,26 @@
+spec_version: "0.1.0"
+name: "synthetic-data-privacy-auditor"
+version: "1.0.0"
+category: "cybersecurity"
+author: "Rucha Salpure"
+description: "Audits synthetic tabular and unstructured training datasets for differential privacy leakage, membership inference risks, and k-anonymity violations"
+capabilities:
+  - "privacy-leakage-audit"
+  - "autonomous-decision-making"
+  - "explainable-auditing"
+  - "multi-agent-collaboration"
+skills:
+  - "privacy-leakage-audit"
+tools:
+  - "python_executor"
+  - "audit_logger"
+  - "schema_validator"
+runtime:
+  environment: "python3.11"
+  memory_limit: "4GB"
+  timeout_seconds: 300
+governance:
+  audit_logging: true
+  human_in_the_loop: false
+  maker_checker: true
+  explainability_required: true

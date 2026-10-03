@@ -1,0 +1,3 @@
+hooks:
+  on_start: "scripts/on-start.sh"
+  on_error: "scripts/on-error.sh"

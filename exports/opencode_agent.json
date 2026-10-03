@@ -1,0 +1,8 @@
+{
+  "agent_id": "synthetic-data-privacy-auditor",
+  "protocol": "opencode/v1",
+  "capabilities": [
+    "autonomous",
+    "governed"
+  ]
+}
