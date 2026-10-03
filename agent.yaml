@@ -1,26 +1,30 @@
 spec_version: "0.1.0"
-name: "synthetic-data-privacy-auditor"
-version: "1.0.0"
-category: "cybersecurity"
+name: synthetic-data-privacy-auditor
+version: 1.0.0
+description: Audits synthetic tabular and unstructured training datasets for differential privacy leakage, membership inference risks, and k-anonymity violations.
 author: "Rucha Salpure"
-description: "Audits synthetic tabular and unstructured training datasets for differential privacy leakage, membership inference risks, and k-anonymity violations"
-capabilities:
-  - "privacy-leakage-audit"
-  - "autonomous-decision-making"
-  - "explainable-auditing"
-  - "multi-agent-collaboration"
+license: MIT
+model:
+  preferred: claude-opus-4-6
+  fallback:
+    - claude-sonnet-4-5-20250929
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
 skills:
-  - "privacy-leakage-audit"
-tools:
-  - "python_executor"
-  - "audit_logger"
-  - "schema_validator"
+  - privacy-leakage-audit
+tools: []
+delegation:
+  mode: auto
 runtime:
-  environment: "python3.11"
-  memory_limit: "4GB"
-  timeout_seconds: 300
-governance:
-  audit_logging: true
-  human_in_the_loop: false
-  maker_checker: true
-  explainability_required: true
+  max_turns: 50
+  timeout: 300
+compliance:
+  risk_tier: standard
+  frameworks: []
+tags:
+  - cybersecurity
+  - autonomous-agent
+  - opengap-verified
+metadata:
+  repository: "https://github.com/ruchasalpure/synthetic-data-privacy-auditor"
