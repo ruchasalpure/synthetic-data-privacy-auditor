@@ -1,3 +1,0 @@
-cadence: "continuous"
-heartbeat_interval_seconds: 60
-integrity_check: "SHA-256"

@@ -1,4 +1,0 @@
-backend: "sqlite"
-retention_days: 90
-encryption: "AES-256-GCM"
-auto_pruning: true

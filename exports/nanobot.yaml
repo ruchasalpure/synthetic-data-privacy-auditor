@@ -1,4 +1,0 @@
-spec: nanobot/v1
-name: synthetic-data-privacy-auditor
-runtime: python3.11
-entrypoint: agent.py

@@ -1,6 +1,0 @@
-app:
-  name: "synthetic-data-privacy-auditor"
-  environment: "production"
-  logging:
-    level: "INFO"
-    format: "json"
